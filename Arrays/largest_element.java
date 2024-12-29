@@ -1,6 +1,6 @@
 package Arrays;
 
-public class longest_element {
+public class largest_element {
     public static void main(String[] args){
     int arr[]={1,2,3,4,5,10};
     int max=Integer.MIN_VALUE;
