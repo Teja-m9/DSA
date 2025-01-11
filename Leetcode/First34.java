@@ -24,6 +24,9 @@ public class First34 {
                     break;
                 }
             }
+            if(!found){
+                ans[1]=-1;
+            }
         }
         System.out.print(Arrays.toString(ans));
     }
