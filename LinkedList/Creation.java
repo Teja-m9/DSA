@@ -7,6 +7,23 @@ public class Creation {
         this.tail = null;
         this.size = 0;
     }
+    public void insertFirst(int value){
+        Node node=new Node(value);
+        node.next=head;
+        head=node;
+        if(tail==head){
+            tail=head;
+        }
+        size++;
+    }
+    public void display(){
+        Node temp=head;
+        while(temp!=null){
+            System.out.print(temp.value+" -> ");
+            temp=temp.next;
+        }
+        System.out.println("null");
+    }
     private class Node{
         int value;
         Node next;
